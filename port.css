@@ -1,0 +1,85 @@
+body {
+  font-family: Material Icons;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: RGBA( 147, 112, 219, 1 );
+  color:#f8f8f8;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 20px;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+/* ส่วนของประวัติส่วนตัว */
+.about-section {
+  display: flex;
+  flex-direction: row; /* จัดให้รูปอยู่ซ้าย */
+  align-items: center;
+  padding: 20px;
+  background-color: RGBA( 230, 230, 250, 1 );
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.about-section img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 100px; /* ระยะห่างรูปภาพจากข้อความ */
+  margin-left: 100px;
+}
+
+.about-section h2 {
+  font-size: 22px;
+  margin-bottom: 20%;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+/* ส่วนของกราฟและแผนภูมิ */
+#chartSection {
+  display: flex;
+  flex-direction: row; /* จัดให้กราฟแสดงในแนวนอน */
+  justify-content: space-between; /* กราฟจะอยู่คนละฝั่งของแถว */
+  align-items: center; /* จัดให้กราฟแสดงกึ่งกลางแถว */
+}
+
+.chart-container {
+  flex: 1; /* กราฟจะมีขนาดเท่ากันในแนวนอน */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* จัดให้กราฟแสดงกึ่งกลางตามแนวดิ่ง */
+  margin-top: 10px;
+  text-align: center;
+}
+
+.chart-container h3,
+.chart-container p {
+  display: inline; /* ให้ h3 และ p แสดงในแนวนอนบรรทัดเดียวกัน */
+  margin: 20px; /* ไม่ให้มีระยะห่างข้างบนหรือล่าง */
+  font-size: 18px; /* ปรับขนาดตัวอักษรตามต้องการ */
+}
+
+.chart-container canvas {
+  max-width: 500px; /* ปรับความกว้างของกราฟตามต้องการ */
+  max-height: 450px; /* ปรับความสูงของกราฟตามต้องการ */
+}
+
+footer{
+    background-color: RGBA( 147, 112, 219, 1 );
+    color:#f8f8f8;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 20px;
+}

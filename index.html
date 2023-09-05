@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="port.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="port.js" defer></script>
+  <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+      <h1>My Portfolio</h1>
+    </header>
+    <section class="about-section">
+      <img src="image/an.jpg" alt="My Photo">
+      <div class="about-text">
+        <u><h2>ประวัติส่วนตัว</h2></u>
+      <p>นางสาวธัญญลักษ์ สุขเกษม</p>
+      <p>อายุ: 19 ปี</p>
+      <p>สถานศึกษา : มหาวิทยาลัยแม่โจ้</p>
+      <p>คณะวิทยาศาสตร์</p>
+      <p>สาขาวิทยาการคอมพิวเตอร์</p>
+      <p>กำลังศึกษาปีที่ 2/2566</p>
+    </div><!-- สามารถเพิ่มข้อมูลเพิ่มเติมตามต้องการ -->
+   </section>
+
+    <main>
+      <section id="chartSection">
+        <h3>My Skills</h3><br>
+        <div class="chart-container">
+          <p>ความสามารถในการใช้ภาษาทางคอมพิวเตอร์</p>
+          <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+          <p>กิจวัตรประจำวัน</p>
+          <canvas id="pieChart"></canvas>
+        </div>
+
+      </section>
+    </main>
+    <footer>Thanks</footer>
+  </body>
+  </html>
